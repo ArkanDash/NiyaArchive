@@ -12,11 +12,11 @@
 </script>
 
 <template>
-  <div class="text-white">
-    <div class="flex flex-col items-center bg-gray-800 p-4 rounded-t-md gap-4">
-      <text class="text-6xl font-bold">Niya Archive</text>
+  <div class="flex flex-col gap-4 text-white">
+    <div class="flex flex-col items-center bg-gray-800 p-4 rounded-md gap-4">
+      <text class="text-6xl font-bold p-4">Niya Archive</text>
       
-      <div class="flex gap-8 w-full justify-center border-t border-gray-700 pt-4"> 
+      <div class="flex gap-8 w-full justify-center border-t border-gray-700 p-4"> 
 
         <button 
           @click="setActiveView('main')"
@@ -42,9 +42,7 @@
       </div>
     </div>
     
-    <div class="bg-gray-800 p-4 rounded-b-md">
-      <hr class="border-gray-700 my-4" />
-      
+    <div class="bg-gray-800 p-4 rounded-md">
       <MainStoryContent v-if="currentView === 'main'" />
       <BondStoryContent v-else />
       
